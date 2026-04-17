@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real state</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <style>
+        .gallery {
+            width: 24vw;
+            height: 40vh;
+        }
+
+        div:has(.gallery) {
+            margin: 2vh 3vw;
+        }
+
+        .footer{
+            background-color: black;
+            left: 0;
+            bottom: 0;
+            height: 50px;
+            color: white;
+            text-align: center;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <section>
+        <div class="container ">
+            <nav class="navbar navbar-expand-lg bg-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand text-light" href="#">Real Estate</a>
+                    <button class="navbar-toggler text-light" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="#">Features</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="#">Pricing</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Dropdown link
+                                </a>
+                                <ul class="dropdown-menu bg-dark">
+                                    <li><a class="dropdown-item text-light" href="#">Action</a></li>
+                                    <li><a class="dropdown-item text-light" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item text-light" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </section>
+
+    <section>
+        <div class="container" style="width: 100%; margin: 10px auto;">
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/2.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/3.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="row d-flex justify-content-around">
+                <div class="card col-xl-3 col-lg-4 col-md-6 col-12 mt-5" style="width: 18rem;">
+                    <img src="images/4.jpg" class="card-img-top mt-3" height="170px" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Farm House</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card’s content.</p>
+                        <a href="#" class="btn btn-primary">Details</a>
+                    </div>
+                </div>
+
+                <div class="card col-xl-3 col-lg-4 col-md-6 col-12 mt-5" style="width: 18rem;">
+                    <img src="images/5.jpg" class="card-img-top mt-3" height="170px" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">House</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card’s content.</p>
+                        <a href="#" class="btn btn-primary">Details</a>
+                    </div>
+                </div>
+
+                <div class="card col-xl-3 col-lg-4 col-md-6 col-12 mt-5" style="width: 18rem;">
+                    <img src="images/6.jpg" class="card-img-top mt-3" height="170px" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">House</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card’s content.</p>
+                        <a href="#" class="btn btn-primary">Details</a>
+                    </div>
+                </div>
+
+                <div class="card col-xl-3 col-lg-4 col-md-6 col-12 mt-5" style="width: 18rem;">
+                    <img src="images/7.jpg" class="card-img-top mt-3" height="170px" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">House</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card’s content.</p>
+                        <a href="#" class="btn btn-primary">Details</a>
+                    </div>
+                </div>
+
+                <div class="card col-xl-3 col-lg-4 col-md-6 col-12 mt-5" style="width: 18rem;">
+                    <img src="images/8.jpg" class="card-img-top mt-3" height="170px" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">House</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card’s content.</p>
+                        <a href="#" class="btn btn-primary">Details</a>
+                    </div>
+                </div>
+
+                <div class="card col-xl-3 col-lg-4 col-md-6 col-12 mt-5" style="width: 18rem;">
+                    <img src="images/9.jpg" class="card-img-top mt-3" height="170px" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Villa</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card’s content.</p>
+                        <a href="#" class="btn btn-primary">Details</a>
+                    </div>
+                </div>
+
+                <div class="card col-xl-3 col-lg-4 col-md-6 col-12 mt-5" style="width: 18rem;">
+                    <img src="images/10.jpg" class="card-img-top mt-3" height="170px" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Villa</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card’s content.</p>
+                        <a href="#" class="btn btn-primary">Details</a>
+                    </div>
+                </div>
+
+                <div class="card col-xl-3 col-lg-4 col-md-6 col-12 mt-5" style="width: 18rem;">
+                    <img src="images/11.jpg" class="card-img-top mt-3" height="170px" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">House</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card’s content.</p>
+                        <a href="#" class="btn btn-primary">Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container ">
+            <h1 >Photo Gallery</h1>
+            <div class="row d-flex justify-content-evenly">
+                <div class="col-3">
+                    <img class="gallery" src="images/12.jpg" alt="">
+                </div>
+                <div class="col-3">
+                    <img class="gallery" src="images/13.jpg" alt="">
+                </div>
+                <div class="col-3">
+                    <img class="gallery" src="images/14.jpg" alt="">
+                </div>
+                <div class="col-3">
+                    <img class="gallery" src="images/15.jpg" alt="">
+                </div>
+                <div class="col-3">
+                    <img class="gallery" src="images/16.jpg" alt="">
+                </div>
+                <div class="col-3">
+                    <img class="gallery" src="images/17.jpg" alt="">
+                </div>
+                <div class="col-3">
+                    <img class="gallery" src="images/18.jpg" alt="">
+                </div>
+                <div class="col-3">
+                    <img class="gallery" src="images/19.jpg" alt="">
+                </div>
+                <div class="col-3">
+                    <img class="gallery" src="images/20.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="row">
+            <div class="footer align-content-center">Footer</div>
+        </div>
+    </section>
+</body>
+
+</html>
